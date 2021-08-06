@@ -1,0 +1,39 @@
+* {
+
+    box-sizing:border-box;
+    margin:50;
+    padding:0;
+  
+  }
+  
+  html, body {
+  
+    height:100%;
+    width:100%;
+  
+  }
+  
+  body {
+  
+    align-content:space-around;
+    background-color:#202830;
+    color:#ffffff;
+    display:grid;
+    justify-content:center;
+  
+  }
+
+  .image {
+    margin-top: 50px;
+    max-width: 5000px;
+    height: 200px;
+    background-size:cover;
+    background: url(car1.png) center,url(track.jpg) top center;
+    background-repeat: no-repeat;
+  }
+  
+  canvas {
+  
+    background-color:#ffffff;
+  
+  }
