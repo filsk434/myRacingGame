@@ -273,13 +273,6 @@ else{
   context.strokeStyle = '#FF0000';
   context.stroke();
 
-//outer circle
-  context.beginPath();
-  context.arc(bigCircle.x, bigCircle.y, bigCircle.r, 0, 2 * Math.PI, false);
-  context.lineWidth = 8;
-  context.strokeStyle = '#FF0000';
-  context.stroke();
-
 //outer square
 context.beginPath();
 context.rect(square.x,square.y,square.height,square.width)
@@ -291,6 +284,12 @@ context.stroke();
   window.requestAnimationFrame(loop);
 
 };
+
+window.addEventListener("keydown", function(e) {
+  if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+      e.preventDefault();
+  }
+}, false);
 
 window.addEventListener("keypress", controller.keyListener);
 window.addEventListener("keydown", controller.keyListener);
